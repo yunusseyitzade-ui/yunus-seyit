@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">Yunus Seyit — Python Developer & Software Developer</title>
+  <meta name="description" id="metaDesc" content="Yunus Seyit: Python ve yazılım geliştirici. Hayal et. Tasarla. İnşa et. Projeler, yetenekler ve işbirliği için iletişime geçin.">
+  <meta name="author" content="Yunus Seyit">
+  <meta name="theme-color" content="#080808">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" id="canonical" href="">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" id="ogTitle" content="Yunus Seyit — Python Developer & Software Developer">
+  <meta property="og:description" id="ogDesc" content="Hayal et. Tasarla. İnşa et.">
+  <meta property="og:image" content="assets/hero.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="preload" as="image" href="assets/hero.svg">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yunus Seyit",
+    "jobTitle": "Python Developer & Software Developer",
+    "description": "Python ve yazılım geliştirici."
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">İçeriğe geç</a>
+
+  <!-- Açılış animasyonu -->
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <img src="assets/logo.svg" alt="" width="84" height="84" class="loader__logo">
+    <div class="loader__bar" aria-hidden="true"><span></span></div>
+    <p class="loader__text"><span data-i18n="loader.text">Yükleniyor</span>…</p>
+  </div>
+
+  <!-- Mouse ışığı -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Mobil üst çubuk -->
+  <header class="topbar">
+    <a href="#home" class="topbar__brand" aria-label="Yunus Seyit">
+      <img src="assets/logo.svg" alt="YS" width="40" height="40">
+    </a>
+    <button class="burger" id="burger" type="button" aria-controls="sidebar" aria-expanded="false" data-i18n-aria="nav.menu" aria-label="Menüyü aç/kapat">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <!-- Sol navigasyon -->
+  <aside class="sidebar" id="sidebar">
+    <a href="#home" class="sidebar__logo" aria-label="Yunus Seyit — Ana Sayfa">
+      <img src="assets/logo.svg" alt="YS" width="64" height="64">
+      <span class="sidebar__name">YUNUS SEYİT</span>
+    </a>
+
+    <nav aria-label="Ana menü" data-i18n-aria="nav.main">
+      <ul class="nav" id="nav">
+        <li><a href="#home" data-section="home" data-i18n="nav.home">Ana Sayfa</a></li>
+        <li><a href="#about" data-section="about" data-i18n="nav.about">Hakkımda</a></li>
+        <li><a href="#skills" data-section="skills" data-i18n="nav.skills">Yeteneklerim</a></li>
+        <li><a href="#projects" data-section="projects" data-i18n="nav.projects">Projelerim</a></li>
+        <li><a href="#collab" data-section="collab" data-i18n="nav.collab">İşbirliği</a></li>
+        <li><a href="#contact" data-section="contact" data-i18n="nav.contact">İletişim</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar__bottom">
+      <div class="lang" role="group" data-i18n-aria="lang.switch" aria-label="Dili değiştir">
+        <button type="button" class="lang__btn" data-lang="tr" aria-pressed="true">TR</button>
+        <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <ul class="social" data-social aria-label="Sosyal medya" data-i18n-aria="social.label"></ul>
+    </div>
+  </aside>
+
+  <main id="main" class="main">
+
+    <!-- ANA SAYFA -->
+    <section id="home" class="hero section" aria-labelledby="heroTitle">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="eyebrow hero__hello"><span data-i18n="hero.hello">Merhaba, ben</span></p>
+        <h1 id="heroTitle" class="hero__title"><span class="gold-text" data-i18n="hero.name">Yunus Seyit.</span></h1>
+        <p class="hero__role" data-i18n="hero.role">Python Developer & Software Developer</p>
+        <p class="hero__slogan" data-i18n="hero.slogan">Hayal et. Tasarla. İnşa et.</p>
+        <p class="hero__desc" data-i18n="hero.desc1"></p>
+        <p class="hero__desc hero__desc--muted" data-i18n="hero.desc2"></p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary" data-i18n="hero.cta1">Projelerimi Keşfet</a>
+          <a href="#contact" class="btn btn--ghost" data-i18n="hero.cta2">Benimle İşbirliği Yap</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" data-i18n-aria="hero.scroll" aria-label="Aşağı kaydır"><span></span></a>
+    </section>
+
+    <!-- HAKKIMDA -->
+    <section id="about" class="section" aria-labelledby="aboutTitle">
+      <div class="container about">
+        <div class="about__photo reveal">
+          <div class="photo-frame" id="photoFrame">
+            <div class="photo-frame__placeholder" id="photoPlaceholder">
+              <img src="assets/logo.svg" alt="" width="96" height="96">
+              <p data-i18n="about.photoHint"></p>
+            </div>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="eyebrow reveal" data-i18n="about.eyebrow">Hakkımda</p>
+          <h2 id="aboutTitle" class="section-title reveal" data-i18n="about.title">Ben Kimim?</h2>
+          <p class="lead reveal" data-i18n="about.p1"></p>
+          <p class="reveal" data-i18n="about.p2"></p>
+          <p class="reveal" data-i18n="about.p3"></p>
+          <p class="reveal" data-i18n="about.p4"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- YETENEKLER -->
+    <section id="skills" class="section" aria-labelledby="skillsTitle">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="skills.eyebrow">Yeteneklerim</p>
+        <h2 id="skillsTitle" class="section-title reveal" data-i18n="skills.title">Teknolojiler</h2>
+        <p class="section-intro reveal" data-i18n="skills.intro"></p>
+
+        <div class="skill-filters reveal" id="skillFilters" role="group" data-i18n-aria="skills.legend" aria-label="Seviye açıklaması"></div>
+        <div id="skillsRoot"></div>
+      </div>
+    </section>
+
+    <!-- PROJELER -->
+    <section id="projects" class="section" aria-labelledby="projectsTitle">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="projects.eyebrow">Projelerim</p>
+        <h2 id="projectsTitle" class="section-title reveal" data-i18n="projects.title">Seçili Projeler</h2>
+        <p class="section-intro reveal" data-i18n="projects.intro"></p>
+        <div class="projects" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- İŞBİRLİĞİ -->
+    <section id="collab" class="section" aria-labelledby="collabTitle">
+      <div class="container">
+        <div class="collab reveal">
+          <div class="collab__glow" aria-hidden="true"></div>
+          <p class="eyebrow" data-i18n="collab.eyebrow">İşbirliği</p>
+          <h2 id="collabTitle" class="collab__title" data-i18n="collab.title">Birlikte Daha Büyük İşler Başarabiliriz.</h2>
+          <p class="collab__lead" data-i18n="collab.desc1"></p>
+          <p data-i18n="collab.desc2"></p>
+          <p class="collab__closing gold-text" data-i18n="collab.desc3"></p>
+          <a href="#contact" class="btn btn--primary btn--lg" id="collabCta" data-focus-form data-i18n="collab.cta">Benimle İşbirliği Yap</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section id="contact" class="section" aria-labelledby="contactTitle">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="contact.eyebrow">İletişim</p>
+        <h2 id="contactTitle" class="section-title reveal" data-i18n="contact.title">Bana Yazın</h2>
+        <p class="section-intro reveal" data-i18n="contact.intro"></p>
+
+        <div class="contact">
+          <form class="form glass reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="f-name" data-i18n="contact.name">Ad Soyad</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="100">
+              <p class="field__error" id="e-name" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="f-email" data-i18n="contact.email">E-posta</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required maxlength="150">
+              <p class="field__error" id="e-email" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="f-subject" data-i18n="contact.subject">Konu</label>
+              <input id="f-subject" name="subject" type="text" required maxlength="150">
+              <p class="field__error" id="e-subject" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="f-message" data-i18n="contact.message">Mesaj</label>
+              <textarea id="f-message" name="message" rows="6" required maxlength="3000"></textarea>
+              <p class="field__error" id="e-message" role="alert"></p>
+            </div>
+            <!-- Bot tuzağı: gerçek kullanıcılar görmez -->
+            <div class="hp" aria-hidden="true">
+              <label>Website <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+            </div>
+            <button type="submit" class="btn btn--primary" id="submitBtn" data-i18n="contact.send">Mesajı Gönder</button>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="channels glass reveal" aria-labelledby="channelsTitle">
+            <h3 id="channelsTitle" data-i18n="contact.channels">İletişim kanalları</h3>
+            <ul class="channels__list" id="channelsList"></ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="#home" class="footer__brand" aria-label="Yunus Seyit">
+        <img src="assets/logo.svg" alt="YS" width="44" height="44">
+        <span>YUNUS SEYİT</span>
+      </a>
+      <p class="footer__slogan gold-text" data-i18n="hero.slogan">Hayal et. Tasarla. İnşa et.</p>
+      <ul class="social" data-social aria-label="Sosyal medya" data-i18n-aria="social.label"></ul>
+      <p class="footer__copy">© <span id="year"></span> Yunus Seyit. <span data-i18n="footer.rights">Tüm hakları saklıdır.</span></p>
+    </div>
+  </footer>
+
+  <!-- Proje detay penceresi -->
+  <dialog class="modal" id="projectModal" aria-labelledby="modalTitle">
+    <div class="modal__inner glass">
+      <button type="button" class="modal__close" id="modalClose" data-i18n-aria="projects.close" aria-label="Kapat">×</button>
+      <div class="modal__media"><img id="modalImg" src="" alt="" width="800" height="500"></div>
+      <div class="modal__body">
+        <h3 id="modalTitle"></h3>
+        <p class="modal__tagline" id="modalTagline"></p>
+        <p id="modalDesc"></p>
+        <h4 data-i18n="projects.techTitle">Kullanılan teknolojiler</h4>
+        <ul class="chips" id="modalTech"></ul>
+        <div class="modal__actions" id="modalActions"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <noscript><style>.loader{display:none!important}.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</body>
+</html>

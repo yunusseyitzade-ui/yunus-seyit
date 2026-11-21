@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# Canlı adresini aldığında şu satırı ekle:
+# Sitemap: https://SENIN-ALAN-ADIN/sitemap.xml
